@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — NPTECH</title>
+<meta name="description" content="Talk to North Pole Tech. Budhanilkantha, Kathmandu 44600, Nepal. We answer every message within one business day.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><circle cx='12' cy='12' r='10.5' fill='none' stroke='black'/><circle cx='12' cy='12' r='5.5' fill='none' stroke='black'/><path d='M12 1.5V22.5M1.5 12H22.5' stroke='black'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" data-nav>
+  <div class="wrap">
+    <div class="nav__inner">
+      <a class="logo" href="index.html" aria-label="NPTECH home">
+        <svg class="mark" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="10.5"/><circle cx="12" cy="12" r="5.5"/><path d="M12 1.5V22.5M1.5 12H22.5"/>
+        </svg>
+        <span>NPTech</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a class="nav__link" href="index.html">Home</a>
+        <a class="nav__link" href="about.html">About</a>
+        <a class="nav__link" href="products.html">Products</a>
+        <a class="nav__link" href="pricing.html">Pricing</a>
+        <a class="nav__link" href="insights.html">Insights</a>
+        <a class="nav__link" href="contact.html" aria-current="page">Contact</a>
+      </nav>
+      <a class="btn nav__cta" href="#form">
+        Start a project
+        <svg class="btn__arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 10L10 2M10 2H4M10 2v6"/></svg>
+      </a>
+      <button class="burger" data-burger aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" data-drawer>
+  <nav class="drawer__links" aria-label="Mobile">
+    <a class="drawer__link" href="index.html">Home <span>01</span></a>
+    <a class="drawer__link" href="about.html">About <span>02</span></a>
+    <a class="drawer__link" href="products.html">Products <span>03</span></a>
+    <a class="drawer__link" href="pricing.html">Pricing <span>04</span></a>
+    <a class="drawer__link" href="insights.html">Insights <span>05</span></a>
+    <a class="drawer__link" href="contact.html">Contact <span>06</span></a>
+  </nav>
+  <div class="drawer__foot">
+    <span class="label">Kathmandu, Nepal</span>
+    <a class="label" href="mailto:hello@nptech.io">hello@nptech.io</a>
+  </div>
+</div>
+
+<main id="main">
+
+<section class="phead">
+  <div class="phead__grid" aria-hidden="true"></div>
+  <div class="wrap phead__inner">
+    <div class="crumb" data-reveal>
+      <span class="label">006</span><span class="label">/</span>
+      <span class="label" style="color:var(--fg)">Contact</span>
+    </div>
+    <h1 class="display caps" style="max-width:11ch" data-reveal>Let's build together.</h1>
+    <p class="lead" style="margin-top:2rem;--d:80ms" data-reveal>
+      One message, one business day, one real engineer. No forms that go nowhere.
+    </p>
+  </div>
+</section>
+
+<section style="padding-bottom:var(--sec-y)" id="form">
+  <div class="wrap">
+    <div class="contact-grid">
+
+      <!-- FORM -->
+      <div data-reveal>
+        <div class="sechead">
+          <span class="sechead__num">001</span>
+          <span class="sechead__rule"></span>
+          <span class="sechead__tag">Tell us</span>
+        </div>
+
+        <form data-form novalidate>
+          <div class="field">
+            <label class="label" for="name">Your name</label>
+            <input id="name" name="name" type="text" placeholder="Your full name" required>
+          </div>
+
+          <div class="field">
+            <label class="label" for="email">Work email</label>
+            <input id="email" name="email" type="email" placeholder="you@company.com" required>
+          </div>
+
+          <div class="field">
+            <label class="label" for="company">Company</label>
+            <input id="company" name="company" type="text" placeholder="Company name">
+          </div>
+
+          <div class="field">
+            <label class="label" for="interest">What do you need?</label>
+            <select id="interest" name="interest">
+              <option>Atlas — data intelligence</option>
+              <option>Oracle — forecasting</option>
+              <option>Sentinel — autonomous ops</option>
+              <option>Pulse — consumer app</option>
+              <option>Something custom</option>
+              <option>Just exploring</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label class="label" for="message">The problem, in a sentence</label>
+            <textarea id="message" name="message" placeholder="Our forecasting lives in nine spreadsheets and nobody trusts it." required></textarea>
+          </div>
+
+          <button class="btn btn--solid" type="submit" data-submit style="margin-top:0.5rem">
+            Send message
+            <svg class="btn__arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 10L10 2M10 2H4M10 2v6"/></svg>
+          </button>
+
+          <p class="label" style="margin-top:1.25rem">We reply within one business day. Always a person.</p>
+        </form>
+      </div>
+
+      <!-- INFO + MAP -->
+      <div data-reveal style="--d:80ms">
+        <div class="sechead">
+          <span class="sechead__num">002</span>
+          <span class="sechead__rule"></span>
+          <span class="sechead__tag">Find us</span>
+        </div>
+
+        <div class="map" style="margin-bottom:2.5rem">
+          <!-- Contour motif: the Kathmandu valley, abstracted. No map tile, no colour. -->
+          <svg class="map__lines" viewBox="0 0 400 280" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <path d="M-20 60 C 60 40, 120 90, 200 70 C 280 50, 340 100, 420 80"/>
+            <path d="M-20 100 C 60 80, 130 130, 200 110 C 270 90, 350 140, 420 120"/>
+            <path d="M-20 140 C 70 120, 130 170, 200 150 C 270 130, 350 180, 420 160"/>
+            <path d="M-20 180 C 60 160, 140 210, 200 190 C 260 170, 350 220, 420 200"/>
+            <path d="M-20 220 C 70 200, 130 250, 200 230 C 270 210, 340 260, 420 240"/>
+            <path d="M-20 20 C 70 0, 130 50, 200 30 C 270 10, 340 60, 420 40"/>
+            <path d="M60 -20 V300 M140 -20 V300 M220 -20 V300 M300 -20 V300" opacity="0.35"/>
+          </svg>
+
+          <div class="map__pin">
+            <span class="map__dot" aria-hidden="true"></span>
+            <span class="label" style="color:var(--fg)">NPTech HQ</span>
+            <span class="label">27.7772° N · 85.3620° E</span>
+            <a class="tlink" href="https://maps.google.com/?q=P9M6%2BR65,+Budhanilkantha+44600,+Nepal" target="_blank" rel="noopener" style="margin-top:0.5rem">
+              Open in Maps
+              <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 10L10 2M10 2H4M10 2v6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <div class="info-row">
+            <span class="label">Studio</span>
+            <p>P9M6+R65, Budhanilkantha<br>Kathmandu 44600, Nepal</p>
+          </div>
+          <div class="info-row">
+            <span class="label">General</span>
+            <p><a href="mailto:hello@nptech.io" style="border-bottom:1px solid var(--rule)">hello@nptech.io</a></p>
+          </div>
+          <div class="info-row">
+            <span class="label">Sales</span>
+            <p><a href="mailto:sales@nptech.io" style="border-bottom:1px solid var(--rule)">sales@nptech.io</a></p>
+          </div>
+          <div class="info-row">
+            <span class="label">Phone</span>
+            <p><a href="tel:+97714567890" style="border-bottom:1px solid var(--rule)">+977 1 456 7890</a></p>
+          </div>
+          <div class="info-row">
+            <span class="label">Hours</span>
+            <p>Sun — Fri, 09:00 — 18:00 NPT<br><span class="muted">We overlap with every client we take on.</span></p>
+          </div>
+          <div class="info-row" style="border-bottom:0">
+            <span class="label">Social</span>
+            <p style="display:flex;gap:1.5rem;flex-wrap:wrap">
+              <a href="#" style="border-bottom:1px solid var(--rule)">LinkedIn</a>
+              <a href="#" style="border-bottom:1px solid var(--rule)">X</a>
+              <a href="#" style="border-bottom:1px solid var(--rule)">GitHub</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<section class="inv">
+  <div class="marquee" data-marquee aria-hidden="true">
+    <div class="marquee__track">
+      <span class="marquee__item">Let's build together
+        <svg class="mark" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10.5"/><circle cx="12" cy="12" r="5.5"/><path d="M12 1.5V22.5M1.5 12H22.5"/></svg>
+      </span>
+      <span class="marquee__item">Let's build together
+        <svg class="mark" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10.5"/><circle cx="12" cy="12" r="5.5"/><path d="M12 1.5V22.5M1.5 12H22.5"/></svg>
+      </span>
+      <span class="marquee__item">Let's build together
+        <svg class="mark" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10.5"/><circle cx="12" cy="12" r="5.5"/><path d="M12 1.5V22.5M1.5 12H22.5"/></svg>
+      </span>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <footer class="foot" style="padding-top:clamp(3rem,6vw,5rem)">
+      <div class="foot__grid" style="border-top:0">
+        <div class="foot__col">
+          <a class="logo" href="index.html">
+            <svg class="mark" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="10.5"/><circle cx="12" cy="12" r="5.5"/><path d="M12 1.5V22.5M1.5 12H22.5"/>
+            </svg>
+            <span>NPTech</span>
+          </a>
+          <p class="muted" style="max-width:34ch">North Pole Tech. AI-native software, built from Kathmandu for the world.</p>
+        </div>
+        <div class="foot__col">
+          <span class="label">Sitemap</span>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="products.html">Products</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="insights.html">Insights</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="foot__col">
+          <span class="label">Products</span>
+          <a href="products.html">Atlas</a>
+          <a href="products.html">Oracle</a>
+          <a href="products.html">Sentinel</a>
+          <a href="products.html">Pulse</a>
+        </div>
+        <div class="foot__col">
+          <span class="label">Find us</span>
+          <a href="https://maps.google.com/?q=P9M6%2BR65,+Budhanilkantha+44600,+Nepal" target="_blank" rel="noopener">P9M6+R65, Budhanilkantha<br>Kathmandu 44600, Nepal</a>
+          <a href="mailto:hello@nptech.io">hello@nptech.io</a>
+          <a href="tel:+97714567890">+977 1 456 7890</a>
+        </div>
+      </div>
+
+      <div class="foot__wordmark" aria-hidden="true">NPTECH</div>
+
+      <div class="foot__bottom">
+        <span class="label">© <span data-year>2026</span> North Pole Tech Pvt. Ltd.</span>
+        <div style="display:flex;gap:1.5rem;flex-wrap:wrap">
+          <a class="label" href="#">LinkedIn</a>
+          <a class="label" href="#">X</a>
+          <a class="label" href="#">GitHub</a>
+        </div>
+        <span class="label">True north for every decision</span>
+      </div>
+    </footer>
+  </div>
+</section>
+
+</main>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

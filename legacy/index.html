@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NPTECH — Complex software, made obvious.</title>
+<meta name="description" content="North Pole Tech builds AI-native SaaS that turns operational noise into decisions you can defend. Kathmandu, Nepal.">
+<meta property="og:title" content="NPTECH — Complex software, made obvious.">
+<meta property="og:description" content="AI-native SaaS for teams who outgrew their tools.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><circle cx='12' cy='12' r='10.5' fill='none' stroke='black'/><circle cx='12' cy='12' r='5.5' fill='none' stroke='black'/><path d='M12 1.5V22.5M1.5 12H22.5' stroke='black'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============ NAV ============ -->
+<header class="nav nav--over-dark" data-nav>
+  <div class="wrap">
+    <div class="nav__inner">
+      <a class="logo" href="index.html" aria-label="NPTECH home">
+        <svg class="mark" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="10.5"/>
+          <circle cx="12" cy="12" r="5.5"/>
+          <path d="M12 1.5V22.5M1.5 12H22.5"/>
+        </svg>
+        <span>NPTech</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a class="nav__link" href="index.html" aria-current="page">Home</a>
+        <a class="nav__link" href="about.html">About</a>
+        <a class="nav__link" href="products.html">Products</a>
+        <a class="nav__link" href="pricing.html">Pricing</a>
+        <a class="nav__link" href="insights.html">Insights</a>
+        <a class="nav__link" href="contact.html">Contact</a>
+      </nav>
+
+      <a class="btn nav__cta" href="contact.html">
+        Start a project
+        <svg class="btn__arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 10L10 2M10 2H4M10 2v6"/></svg>
+      </a>
+
+      <button class="burger" data-burger aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ MOBILE DRAWER ============ -->
+<div class="drawer" id="drawer" data-drawer>
+  <nav class="drawer__links" aria-label="Mobile">
+    <a class="drawer__link" href="index.html">Home <span>01</span></a>
+    <a class="drawer__link" href="about.html">About <span>02</span></a>
+    <a class="drawer__link" href="products.html">Products <span>03</span></a>
+    <a class="drawer__link" href="pricing.html">Pricing <span>04</span></a>
+    <a class="drawer__link" href="insights.html">Insights <span>05</span></a>
+    <a class="drawer__link" href="contact.html">Contact <span>06</span></a>
+  </nav>
+  <div class="drawer__foot">
+    <span class="label">Kathmandu, Nepal</span>
+    <a class="label" href="mailto:hello@nptech.io">hello@nptech.io</a>
+  </div>
+</div>
+
+
+<main id="main">
+
+<!-- ============ 001 — HERO ============ -->
+<section class="hero inv" data-hero>
+  <div class="hero__grid" aria-hidden="true"></div>
+
+  <div class="hero__polar" aria-hidden="true">
+    <svg class="polar" viewBox="0 0 400 400">
+      <g class="polar__spin">
+        <circle class="polar__ring" cx="200" cy="200" r="192" stroke-dasharray="2 7"/>
+      </g>
+      <circle class="polar__ring" cx="200" cy="200" r="162"/>
+      <circle class="polar__ring" cx="200" cy="200" r="122"/>
+      <circle class="polar__ring" cx="200" cy="200" r="82"/>
+      <circle class="polar__ring" cx="200" cy="200" r="42"/>
+      <g class="polar__mer polar__spin polar__spin--rev">
+        <line x1="200" y1="38" x2="200" y2="362"/>
+        <line x1="200" y1="38" x2="200" y2="362" transform="rotate(30 200 200)"/>
+        <line x1="200" y1="38" x2="200" y2="362" transform="rotate(60 200 200)"/>
+        <line x1="200" y1="38" x2="200" y2="362" transform="rotate(90 200 200)"/>
+        <line x1="200" y1="38" x2="200" y2="362" transform="rotate(120 200 200)"/>
+        <line x1="200" y1="38" x2="200" y2="362" transform="rotate(150 200 200)"/>
+      </g>
+      <circle class="polar__dot" cx="200" cy="200" r="3.5"/>
+      <circle class="polar__dot" cx="200" cy="38" r="5"/>
+    </svg>
+  </div>
+
+  <div class="wrap hero__inner">
+    <div class="hero__eyebrow hero__fade" style="--d:120ms">
+      <svg class="mark" viewBox="0 0 24 24" aria-hidden="true" style="width:14px;height:14px">
+        <circle cx="12" cy="12" r="10.5"/><path d="M12 1.5V22.5M1.5 12H22.5"/>
+      </svg>
+      <span class="label" style="color:#fff">North Pole Tech</span>
+      <span class="label">— Kathmandu, Nepal</span>
+    </div>
+
+    <h1 class="display caps hero__title">
+      <span class="ln"><span style="--d:200ms">Complex</span></span>
+      <span class="ln"><span style="--d:300ms">software,</span></span>
+      <span class="ln"><span style="--d:400ms">made obvious.</span></span>
+    </h1>
+
+    <div class="hero__row">
+      <p class="lead hero__fade" style="--d:620ms">
+        AI-native SaaS that turns operational noise into decisions you can defend.
+      </p>
+      <div class="hero__actions hero__fade" style="--d:720ms">
+        <a class="btn btn--solid" href="products.html">
+          Explore products
+          <svg class="btn__arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 10L10 2M10 2H4M10 2v6"/></svg>
+        </a>
+        <a class="btn" href="contact.html">Talk to us</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="hero__strip hero__fade" style="--d:840ms">
+      <div class="hero__cell"><span class="label">01</span><b>Data Intelligence</b></div>
+      <div class="hero__cell"><span class="label">02</span><b>Predictive Forecasting</b></div>
+      <div class="hero__cell"><span class="label">03</span><b>Decision Systems</b></div>
+      <div class="hero__cell"><span class="label">04</span><b>Autonomous Operations</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 002 — ABOUT ============ -->
+<section class="section">
+  <div class="wrap">
+    <div class="sechead" data-reveal>
+      <span class="sechead__num">002</span>
+      <span class="sechead__rule"></span>
+      <span class="sechead__tag">About</span>
+    </div>
+
+    <div class="split split--wide">
+      <h2 class="h1 caps" data-reveal>We replace complexity with intelligence.</h2>
+      <div class="stack">
+        <p class="lead" data-reveal style="--d:80ms">
+          Legacy software asks you to learn it. Ours learns you.
+        </p>
+        <p class="measure muted" data-reveal style="--d:160ms">
+          Every tool your business runs on was built for a world without machine intelligence.
+          We rebuild that layer from the ground up — so the software reads the data, finds the
+          pattern, and hands you the decision. Not the spreadsheet.
+        </p>
+        <div data-reveal style="--d:240ms">
+          <a class="tlink" href="about.html">
+            Our story
+            <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 10L10 2M10 2H4M10 2v6"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="metrics" style="margin-top:clamp(3rem,6vw,5rem)" data-reveal>
+      <div class="metric">
+        <div class="metric__val"><span data-count="6">0</span></div>
+        <div class="metric__lab label">Products in market</div>
+      </div>
+      <div class="metric">
+        <div class="metric__val"><span data-count="140">0</span>+</div>
+        <div class="metric__lab label">Teams onboard</div>
+      </div>
+      <div class="metric">
+        <div class="metric__val"><span data-count="12">0</span></div>
+        <div class="metric__lab label">Markets served</div>
+      </div>
+      <div class="metric">
+        <div class="metric__val"><span data-count="99.9">0</span>%</div>
+        <div class="metric__lab label">Platform uptime</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 003 — PRODUCTS ============ -->
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="sechead" data-reveal>
+      <span class="sechead__num">003</span>
+      <span class="sechead__rule"></span>
+      <span class="sechead__tag">Products</span>
+    </div>
+
+    <div class="split split--wide" style="margin-bottom:clamp(2.5rem,5vw,4rem)">
+      <h2 class="h1 caps" data-reveal>Four products. One brain.</h2>
+      <p class="lead" data-reveal style="--d:80ms">
+        Built to stand alone. Designed to compound together.
+      </p>
+    </div>
+
+    <div class="products">
+
+      <a class="product" href="products.html" data-reveal>
+        <div class="product__id">
+          <svg class="product__glyph" viewBox="0 0 44 44" aria-hidden="true">
+            <path d="M22 5 L39 14 L22 23 L5 14 Z"/>
+            <path d="M5 22 L22 31 L39 22"/>
+            <path d="M5 30 L22 39 L39 30"/>
+          </svg>
+          <span class="product__name">Atlas</span>
+        </div>
+        <p class="product__desc">Every system you run, on one canvas.</p>
+        <div class="product__meta">
+          <span class="chip">B2B</span><span class="chip">Data Intelligence</span>
+        </div>
+        <span class="product__go" aria-hidden="true">
+          <svg width="13" height="13" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10L10 2M10 2H4M10 2v6"/></svg>
+        </span>
+      </a>
+
+      <a class="product" href="products.html" data-reveal style="--d:80ms">
+        <div class="product__id">
+          <svg class="product__glyph" viewBox="0 0 44 44" aria-hidden="true">
+            <path d="M6 6 V38 H38"/>
+            <path d="M11 31 L18 24 L24 28 L30 17"/>
+            <path d="M30 17 L38 10" stroke-dasharray="3 3"/>
+            <circle cx="30" cy="17" r="2.5"/>
+          </svg>
+          <span class="product__name">Oracle</span>
+        </div>
+        <p class="product__desc">See the quarter before it arrives.</p>
+        <div class="product__meta">
+          <span class="chip">B2B</span><span class="chip">Forecasting</span>
+        </div>
+        <span class="product__go" aria-hidden="true">
+          <svg width="13" height="13" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10L10 2M10 2H4M10 2v6"/></svg>
+        </span>
+      </a>
+
+      <a class="product" href="products.html" data-reveal style="--d:160ms">
+        <div class="product__id">
+          <svg class="product__glyph" viewBox="0 0 44 44" aria-hidden="true">
+            <path d="M22 5 L37 11 V22 C37 30 30 37 22 40 C14 37 7 30 7 22 V11 Z"/>
+            <path d="M16 22 L20 26 L29 16"/>
+          </svg>
+          <span class="product__name">Sentinel</span>
+        </div>
+        <p class="product__desc">The error that never reaches production.</p>
+        <div class="product__meta">
+          <span class="chip">B2B</span><span class="chip">Autonomous Ops</span>
+        </div>
+        <span class="product__go" aria-hidden="true">
+          <svg width="13" height="13" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10L10 2M10 2H4M10 2v6"/></svg>
+        </span>
+      </a>
+
+      <a class="product" href="products.html" data-reveal style="--d:240ms">
+        <div class="product__id">
+          <svg class="product__glyph" viewBox="0 0 44 44" aria-hidden="true">
+            <path d="M5 22 H13 L17 11 L24 33 L28 22 H39"/>
+            <circle cx="39" cy="22" r="2.5"/>
+          </svg>
+          <span class="product__name">Pulse</span>
+        </div>
+        <p class="product__desc">Enterprise-grade intelligence, pocket-sized.</p>
+        <div class="product__meta">
+          <span class="chip">B2C</span><span class="chip">Personal Finance</span>
+        </div>
+        <span class="product__go" aria-hidden="true">
+          <svg width="13" height="13" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10L10 2M10 2H4M10 2v6"/></svg>
+        </span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ 004 — PLATFORM ============ -->
+<section class="section inv">
+  <div class="wrap">
+    <div class="sechead" data-reveal>
+      <span class="sechead__num">004</span>
+      <span class="sechead__rule"></span>
+      <span class="sechead__tag">Platform</span>
+    </div>
+
+    <div class="split split--wide" style="margin-bottom:clamp(2.5rem,5vw,4rem)">
+      <h2 class="h1 caps" data-reveal>One platform underneath all of it.</h2>
+      <p class="lead" data-reveal style="--d:80ms">
+        Four layers. Every product stands on the same ground.
+      </p>
+    </div>
+
+    <div class="caps-grid">
+
+      <article class="cap" data-reveal>
+        <div class="cap__top">
+          <h3 class="h3 caps">Ingest</h3>
+          <span class="label">01 / 04</span>
+        </div>
+        <svg class="cap__diagram" viewBox="0 0 300 120" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+          <path d="M10 18 C 90 18, 110 60, 175 60"/>
+          <path d="M10 46 C 90 46, 125 60, 175 60"/>
+          <path d="M10 74 C 90 74, 125 60, 175 60"/>
+          <path d="M10 102 C 90 102, 110 60, 175 60"/>
+          <circle cx="180" cy="60" r="7"/>
+          <path d="M190 60 H 290"/>
+          <path d="M282 54 L290 60 L282 66"/>
+        </svg>
+        <p class="muted">Every source, one schema. No pipelines to babysit.</p>
+        <div class="cap__tools">
+          <span class="label">Streaming</span><span class="label">Warehouse</span><span class="label">Legacy ERP</span>
+        </div>
+      </article>
+
+      <article class="cap" data-reveal style="--d:80ms">
+        <div class="cap__top">
+          <h3 class="h3 caps">Reason</h3>
+          <span class="label">02 / 04</span>
+        </div>
+        <svg class="cap__diagram" viewBox="0 0 300 120" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+          <path d="M40 60 L110 25 M40 60 L110 60 M40 60 L110 95"/>
+          <path d="M110 25 L190 60 M110 60 L190 60 M110 95 L190 60"/>
+          <path d="M190 60 L260 60"/>
+          <circle cx="40" cy="60" r="6"/>
+          <circle cx="110" cy="25" r="6"/>
+          <circle cx="110" cy="60" r="6"/>
+          <circle cx="110" cy="95" r="6"/>
+          <circle cx="190" cy="60" r="6"/>
+          <circle cx="260" cy="60" r="9" stroke-dasharray="2 4"/>
+        </svg>
+        <p class="muted">Models that explain themselves, not just answer.</p>
+        <div class="cap__tools">
+          <span class="label">Reasoning</span><span class="label">Audit Trail</span><span class="label">Citations</span>
+        </div>
+      </article>
+
+      <article class="cap" data-reveal style="--d:160ms">
+        <div class="cap__top">
+          <h3 class="h3 caps">Predict</h3>
+          <span class="label">03 / 04</span>
+        </div>
+        <svg class="cap__diagram" viewBox="0 0 300 120" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+          <path d="M10 110 V10 M10 110 H290" opacity="0.4"/>
+          <path d="M22 92 L60 74 L100 82 L145 48"/>
+          <circle cx="145" cy="48" r="4"/>
+          <path d="M145 48 L288 16" stroke-dasharray="4 4"/>
+          <path d="M145 48 L288 62" stroke-dasharray="4 4"/>
+          <path d="M145 48 L288 38"/>
+        </svg>
+        <p class="muted">Revenue, churn and loss — forecast with confidence intervals.</p>
+        <div class="cap__tools">
+          <span class="label">Scenarios</span><span class="label">Backtesting</span><span class="label">Alerts</span>
+        </div>
+      </article>
+
+      <article class="cap" data-reveal style="--d:240ms">
+        <div class="cap__top">
+          <h3 class="h3 caps">Act</h3>
+          <span class="label">04 / 04</span>
+        </div>
+        <svg class="cap__diagram" viewBox="0 0 300 120" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+          <path d="M10 60 H110"/>
+          <path d="M150 25 L185 60 L150 95 L115 60 Z"/>
+          <path d="M190 60 H250 M250 60 L250 28 H290 M250 60 L250 92 H290"/>
+          <path d="M282 22 L290 28 L282 34"/>
+          <path d="M282 86 L290 92 L282 98"/>
+          <circle cx="10" cy="60" r="5"/>
+        </svg>
+        <p class="muted">Decisions execute themselves. You keep the veto.</p>
+        <div class="cap__tools">
+          <span class="label">Workflows</span><span class="label">Approvals</span><span class="label">Rollback</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ 005 — PROCESS ============ -->
+<section class="section">
+  <div class="wrap">
+    <div class="sechead" data-reveal>
+      <span class="sechead__num">005</span>
+      <span class="sechead__rule"></span>
+      <span class="sechead__tag">Process</span>
+    </div>
+
+    <div class="split split--wide" style="margin-bottom:clamp(2.5rem,5vw,4rem)">
+      <h2 class="h1 caps" data-reveal>Six steps. No surprises.</h2>
+      <p class="lead" data-reveal style="--d:80ms">
+        From first call to compounding returns, you always know where you stand.
+      </p>
+    </div>
+
+    <div class="steps">
+      <div class="step" data-reveal>
+        <span class="label">Step 01</span>
+        <h3 class="step__name">Discover</h3>
+        <p class="step__desc">We audit what you run today and what it costs you.</p>
+      </div>
+      <div class="step" data-reveal style="--d:60ms">
+        <span class="label">Step 02</span>
+        <h3 class="step__name">Map</h3>
+        <p class="step__desc">Your data gets a single shape. Every source, one truth.</p>
+      </div>
+      <div class="step" data-reveal style="--d:120ms">
+        <span class="label">Step 03</span>
+        <h3 class="step__name">Model</h3>
+        <p class="step__desc">We train on your history, not a generic benchmark.</p>
+      </div>
+      <div class="step" data-reveal style="--d:180ms">
+        <span class="label">Step 04</span>
+        <h3 class="step__name">Build</h3>
+        <p class="step__desc">Interfaces your team adopts without a training manual.</p>
+      </div>
+      <div class="step" data-reveal style="--d:240ms">
+        <span class="label">Step 05</span>
+        <h3 class="step__name">Deploy</h3>
+        <p class="step__desc">Live in weeks. Your legacy stack keeps running underneath.</p>
+      </div>
+      <div class="step" data-reveal style="--d:300ms">
+        <span class="label">Step 06</span>
+        <h3 class="step__name">Compound</h3>
+        <p class="step__desc">The system sharpens every quarter it stays on.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 006 — TESTIMONIALS ============ -->
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="sechead" data-reveal>
+      <span class="sechead__num">006</span>
+      <span class="sechead__rule"></span>
+      <span class="sechead__tag">Clients</span>
+    </div>
+
+    <h2 class="h1 caps" data-reveal style="margin-bottom:clamp(2.5rem,5vw,3.5rem);max-width:18ch">
+      Trusted by teams who outgrew their tools.
+    </h2>
+
+    <div class="rating" data-reveal>
+      <span class="rating__score">4.9</span>
+      <span class="label">Average rating<br>across 140+ teams</span>
+      <span class="sechead__rule" style="min-width:40px"></span>
+      <span class="rating__score">61%</span>
+      <span class="label">Median drop in<br>manual reporting hours</span>
+    </div>
+
+    <div class="quotes">
+      <figure class="quote" data-reveal>
+        <blockquote class="quote__text">“We closed the quarter in two days. It used to take eleven.”</blockquote>
+        <figcaption class="quote__by">
+          <span class="avatar" aria-hidden="true">SR</span>
+          <span>
+            <b style="font-weight:500">S. Rajbhandari</b><br>
+            <span class="label">CFO — Himal Logistics</span>
+          </span>
+        </figcaption>
+      </figure>
+
+      <figure class="quote" data-reveal style="--d:80ms">
+        <blockquote class="quote__text">“Oracle called our Q3 dip six weeks out. We were ready for it.”</blockquote>
+        <figcaption class="quote__by">
+          <span class="avatar" aria-hidden="true">AT</span>
+          <span>
+            <b style="font-weight:500">A. Tamang</b><br>
+            <span class="label">VP Revenue — Meridian Retail</span>
+          </span>
+        </figcaption>
+      </figure>
+
+      <figure class="quote" data-reveal style="--d:160ms">
+        <blockquote class="quote__text">“Our analysts stopped building reports and started building strategy.”</blockquote>
+        <figcaption class="quote__by">
+          <span class="avatar" aria-hidden="true">DK</span>
+          <span>
+            <b style="font-weight:500">D. Karki</b><br>
+            <span class="label">Head of Ops — Nexa Group</span>
+          </span>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 007 — INSIGHTS ============ -->
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="sechead" data-reveal>
+      <span class="sechead__num">007</span>
+      <span class="sechead__rule"></span>
+      <span class="sechead__tag">Insights</span>
+    </div>
+
+    <div class="split split--wide" style="margin-bottom:clamp(2.5rem,5vw,3.5rem)">
+      <h2 class="h1 caps" data-reveal>Notes from the frontier.</h2>
+      <p class="lead" data-reveal style="--d:80ms">
+        What we're learning while we build it.
+      </p>
+    </div>
+
+    <div class="posts">
+      <a class="post" href="insights.html" data-reveal>
+        <div class="post__meta">
+          <span class="label">12 Jun 2026</span><span class="label">6 min read</span>
+        </div>
+        <h3 class="post__title">Why your forecast is wrong, and your data isn't to blame</h3>
+        <div class="post__thumb">
+          <svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <path d="M20 170 L80 130 L140 145 L200 90"/>
+            <path d="M200 90 L310 40" stroke-dasharray="5 5"/>
+            <path d="M200 90 L310 120" stroke-dasharray="5 5"/>
+            <path d="M200 90 L310 78"/>
+            <circle cx="200" cy="90" r="5"/>
+            <path d="M20 20 V180 H310" opacity="0.4"/>
+          </svg>
+        </div>
+      </a>
+
+      <a class="post" href="insights.html" data-reveal style="--d:80ms">
+        <div class="post__meta">
+          <span class="label">28 May 2026</span><span class="label">4 min read</span>
+        </div>
+        <h3 class="post__title">The hidden tax of software nobody knows how to use</h3>
+        <div class="post__thumb">
+          <svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <rect x="30" y="30" width="60" height="60"/>
+            <rect x="110" y="30" width="60" height="60"/>
+            <rect x="190" y="30" width="60" height="60"/>
+            <rect x="30" y="110" width="60" height="60"/>
+            <rect x="110" y="110" width="60" height="60"/>
+            <path d="M190 110 L250 170 M250 110 L190 170"/>
+          </svg>
+        </div>
+      </a>
+
+      <a class="post" href="insights.html" data-reveal style="--d:160ms">
+        <div class="post__meta">
+          <span class="label">09 May 2026</span><span class="label">8 min read</span>
+        </div>
+        <h3 class="post__title">Building AI infrastructure from Kathmandu</h3>
+        <div class="post__thumb">
+          <svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <circle cx="160" cy="100" r="85"/>
+            <circle cx="160" cy="100" r="58"/>
+            <circle cx="160" cy="100" r="30"/>
+            <path d="M160 15 V185 M75 100 H245"/>
+            <path d="M100 40 L220 160 M220 40 L100 160" opacity="0.5"/>
+          </svg>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 008 — FAQ ============ -->
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="sechead" data-reveal>
+      <span class="sechead__num">008</span>
+      <span class="sechead__rule"></span>
+      <span class="sechead__tag">FAQ</span>
+    </div>
+
+    <div class="split split--wide">
+      <div class="stack">
+        <h2 class="h1 caps" data-reveal>Questions,<br>answered.</h2>
+        <p class="measure muted" data-reveal style="--d:80ms">Still stuck? We answer every email within one business day.</p>
+        <div data-reveal style="--d:160ms">
+          <a class="tlink" href="contact.html">
+            Ask us directly
+            <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 10L10 2M10 2H4M10 2v6"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="faq" data-reveal>
+        <div class="faq__item" data-faq>
+          <button class="faq__q" aria-expanded="false">
+            Do we have to replace our current systems?
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__a" aria-hidden="true"><div>
+            <p>No. We sit on top of what you already run. Your ERP, warehouse and spreadsheets keep working — we read from them, and over time your team simply stops opening them.</p>
+          </div></div>
+        </div>
+
+        <div class="faq__item" data-faq>
+          <button class="faq__q" aria-expanded="false">
+            How long until we see something real?
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__a" aria-hidden="true"><div>
+            <p>First working dashboard in three weeks. Full deployment typically lands between eight and twelve weeks, depending on how many sources we're mapping.</p>
+          </div></div>
+        </div>
+
+        <div class="faq__item" data-faq>
+          <button class="faq__q" aria-expanded="false">
+            Where does our data live?
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__a" aria-hidden="true"><div>
+            <p>Wherever you need it to. Our cloud, your cloud, or fully on-premise. We never train shared models on your data — your history stays yours.</p>
+          </div></div>
+        </div>
+
+        <div class="faq__item" data-faq>
+          <button class="faq__q" aria-expanded="false">
+            Can we trust an AI forecast?
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__a" aria-hidden="true"><div>
+            <p>Only if it shows its work. Every number Oracle produces ships with its confidence interval, the inputs that drove it, and a backtest against your own history. You audit it before you act on it.</p>
+          </div></div>
+        </div>
+
+        <div class="faq__item" data-faq>
+          <button class="faq__q" aria-expanded="false">
+            Do you work with companies outside Nepal?
+            <span class="faq__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq__a" aria-hidden="true"><div>
+            <p>We're building from Kathmandu for twelve markets. Time zones have never been the hard part — we run overlapping hours with every client we take on.</p>
+          </div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 009 — CTA + FOOTER ============ -->
+<section class="inv">
+  <div class="marquee" data-marquee aria-hidden="true">
+    <div class="marquee__track">
+      <span class="marquee__item">Let's build together
+        <svg class="mark" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10.5"/><circle cx="12" cy="12" r="5.5"/><path d="M12 1.5V22.5M1.5 12H22.5"/></svg>
+      </span>
+      <span class="marquee__item">Let's build together
+        <svg class="mark" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10.5"/><circle cx="12" cy="12" r="5.5"/><path d="M12 1.5V22.5M1.5 12H22.5"/></svg>
+      </span>
+      <span class="marquee__item">Let's build together
+        <svg class="mark" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10.5"/><circle cx="12" cy="12" r="5.5"/><path d="M12 1.5V22.5M1.5 12H22.5"/></svg>
+      </span>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="cta">
+      <span class="label" data-reveal>009 — Start here</span>
+      <h2 class="cta__title" data-reveal style="--d:80ms">Bring us your<br>hardest system.</h2>
+      <div class="cta__actions" data-reveal style="--d:160ms">
+        <a class="btn btn--solid" href="contact.html">
+          Start a project
+          <svg class="btn__arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 10L10 2M10 2H4M10 2v6"/></svg>
+        </a>
+        <a class="btn" href="mailto:hello@nptech.io">hello@nptech.io</a>
+      </div>
+    </div>
+
+    <footer class="foot">
+      <div class="foot__grid">
+        <div class="foot__col">
+          <a class="logo" href="index.html">
+            <svg class="mark" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="10.5"/><circle cx="12" cy="12" r="5.5"/><path d="M12 1.5V22.5M1.5 12H22.5"/>
+            </svg>
+            <span>NPTech</span>
+          </a>
+          <p class="muted" style="max-width:34ch">North Pole Tech. AI-native software, built from Kathmandu for the world.</p>
+        </div>
+
+        <div class="foot__col">
+          <span class="label">Sitemap</span>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="products.html">Products</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="insights.html">Insights</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="foot__col">
+          <span class="label">Products</span>
+          <a href="products.html">Atlas</a>
+          <a href="products.html">Oracle</a>
+          <a href="products.html">Sentinel</a>
+          <a href="products.html">Pulse</a>
+        </div>
+
+        <div class="foot__col">
+          <span class="label">Find us</span>
+          <a href="https://maps.google.com/?q=P9M6%2BR65,+Budhanilkantha+44600,+Nepal" target="_blank" rel="noopener">P9M6+R65, Budhanilkantha<br>Kathmandu 44600, Nepal</a>
+          <a href="mailto:hello@nptech.io">hello@nptech.io</a>
+          <a href="tel:+97714567890">+977 1 456 7890</a>
+        </div>
+      </div>
+
+      <div class="foot__wordmark" aria-hidden="true">NPTECH</div>
+
+      <div class="foot__bottom">
+        <span class="label">© <span data-year>2026</span> North Pole Tech Pvt. Ltd.</span>
+        <div style="display:flex;gap:1.5rem;flex-wrap:wrap">
+          <a class="label" href="#">LinkedIn</a>
+          <a class="label" href="#">X</a>
+          <a class="label" href="#">GitHub</a>
+        </div>
+        <span class="label">True north for every decision</span>
+      </div>
+    </footer>
+  </div>
+</section>
+
+</main>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Insights — NPTECH</title>
+<meta name="description" content="Notes from the frontier. What we're learning while we build AI-native software in Kathmandu.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><circle cx='12' cy='12' r='10.5' fill='none' stroke='black'/><circle cx='12' cy='12' r='5.5' fill='none' stroke='black'/><path d='M12 1.5V22.5M1.5 12H22.5' stroke='black'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+  /* Featured article — page-specific */
+  .feature {
+    display: grid;
+    gap: clamp(1.5rem, 3vw, 3rem);
+    border-top: 1px solid var(--fg);
+    border-bottom: 1px solid var(--rule);
+    padding-block: clamp(1.5rem, 3vw, 2.5rem);
+    align-items: center;
+    margin-bottom: clamp(3rem, 6vw, 5rem);
+  }
+  @media (min-width: 900px) { .feature { grid-template-columns: 1.1fr 1fr; } }
+
+  .feature__thumb {
+    aspect-ratio: 16 / 9;
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    overflow: hidden;
+  }
+  .feature__thumb svg {
+    width: 100%; height: 100%;
+    stroke: var(--fg); fill: none; stroke-width: 1;
+    opacity: 0.45;
+    transition: transform 0.8s var(--ease), opacity 0.5s var(--ease);
+  }
+  .feature:hover .feature__thumb svg { transform: scale(1.05); opacity: 0.7; }
+
+  .feature__title {
+    font-family: var(--font-display);
+    font-size: clamp(1.75rem, 3.4vw, 3rem);
+    font-weight: 600;
+    letter-spacing: -0.035em;
+    line-height: 1.02;
+    text-wrap: balance;
+  }
+  .feature:hover .feature__title { text-decoration: underline; text-underline-offset: 6px; }
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" data-nav>
+  <div class="wrap">
+    <div class="nav__inner">
+      <a class="logo" href="index.html" aria-label="NPTECH home">
+        <svg class="mark" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="10.5"/><circle cx="12" cy="12" r="5.5"/><path d="M12 1.5V22.5M1.5 12H22.5"/>
+        </svg>
+        <span>NPTech</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a class="nav__link" href="index.html">Home</a>
+        <a class="nav__link" href="about.html">About</a>
+        <a class="nav__link" href="products.html">Products</a>
+        <a class="nav__link" href="pricing.html">Pricing</a>
+        <a class="nav__link" href="insights.html" aria-current="page">Insights</a>
+        <a class="nav__link" href="contact.html">Contact</a>
+      </nav>
+      <a class="btn nav__cta" href="contact.html">
+        Start a project
+        <svg class="btn__arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 10L10 2M10 2H4M10 2v6"/></svg>
+      </a>
+      <button class="burger" data-burger aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" data-drawer>
+  <nav class="drawer__links" aria-label="Mobile">
+    <a class="drawer__link" href="index.html">Home <span>01</span></a>
+    <a class="drawer__link" href="about.html">About <span>02</span></a>
+    <a class="drawer__link" href="products.html">Products <span>03</span></a>
+    <a class="drawer__link" href="pricing.html">Pricing <span>04</span></a>
+    <a class="drawer__link" href="insights.html">Insights <span>05</span></a>
+    <a class="drawer__link" href="contact.html">Contact <span>06</span></a>
+  </nav>
+  <div class="drawer__foot">
+    <span class="label">Kathmandu, Nepal</span>
+    <a class="label" href="mailto:hello@nptech.io">hello@nptech.io</a>
+  </div>
+</div>
+
+<main id="main">
+
+<section class="phead">
+  <div class="phead__grid" aria-hidden="true"></div>
+  <div class="wrap phead__inner">
+    <div class="crumb" data-reveal>
+      <span class="label">005</span><span class="label">/</span>
+      <span class="label" style="color:var(--fg)">Insights</span>
+    </div>
+    <h1 class="display caps" style="max-width:12ch" data-reveal>Notes from the frontier.</h1>
+    <p class="lead" style="margin-top:2rem;--d:80ms" data-reveal>
+      What we're learning while we build it. No thought leadership, just field notes.
+    </p>
+  </div>
+</section>
+
+<section style="padding-bottom:var(--sec-y)">
+  <div class="wrap">
+
+    <!-- FEATURED -->
+    <a class="feature" href="#" data-reveal>
+      <div>
+        <div class="post__meta" style="margin-bottom:1.25rem">
+          <span class="label" style="color:var(--fg)">Featured</span>
+          <span class="label">12 Jun 2026</span>
+          <span class="label">6 min read</span>
+        </div>
+        <h2 class="feature__title">Why your forecast is wrong, and your data isn't to blame</h2>
+        <p class="muted measure" style="margin-top:1.25rem">
+          Most forecasting failures aren't data problems. They're confidence problems — a single
+          number presented as certainty, with the error bars quietly deleted.
+        </p>
+        <span class="tlink" style="margin-top:1.5rem">
+          Read article
+          <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 10L10 2M10 2H4M10 2v6"/></svg>
+        </span>
+      </div>
+      <div class="feature__thumb">
+        <svg viewBox="0 0 480 270" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <path d="M40 240 V30 M40 240 H450" opacity="0.4"/>
+          <path d="M40 200 H450 M40 140 H450 M40 80 H450" stroke-dasharray="2 8" opacity="0.35"/>
+          <path d="M60 210 L120 170 L180 185 L240 120"/>
+          <circle cx="240" cy="120" r="6"/>
+          <path d="M240 120 L448 40" stroke-dasharray="6 6"/>
+          <path d="M240 120 L448 165" stroke-dasharray="6 6"/>
+          <path d="M240 120 L448 100"/>
+          <path d="M240 30 V240" stroke-dasharray="5 5" opacity="0.5"/>
+          <path d="M344 70 V132" opacity="0.3"/>
+          <path d="M448 40 V165" opacity="0.3"/>
+        </svg>
+      </div>
+    </a>
+
+    <!-- GRID -->
+    <div class="posts">
+
+      <a class="post" href="#" data-reveal>
+        <div class="post__meta"><span class="label">28 May 2026</span><span class="label">4 min read</span></div>
+        <h3 class="post__title">The hidden tax of software nobody knows how to use</h3>
+        <div class="post__thumb">
+          <svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <rect x="30" y="30" width="60" height="60"/><rect x="110" y="30" width="60" height="60"/>
+            <rect x="190" y="30" width="60" height="60"/><rect x="30" y="110" width="60" height="60"/>
+            <rect x="110" y="110" width="60" height="60"/>
+            <path d="M190 110 L250 170 M250 110 L190 170"/>
+          </svg>
+        </div>
+      </a>
+
+      <a class="post" href="#" data-reveal style="--d:80ms">
+        <div class="post__meta"><span class="label">09 May 2026</span><span class="label">8 min read</span></div>
+        <h3 class="post__title">Building AI infrastructure from Kathmandu</h3>
+        <div class="post__thumb">
+          <svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <circle cx="160" cy="100" r="85"/><circle cx="160" cy="100" r="58"/><circle cx="160" cy="100" r="30"/>
+            <path d="M160 15 V185 M75 100 H245"/>
+            <path d="M100 40 L220 160 M220 40 L100 160" opacity="0.5"/>
+          </svg>
+        </div>
+      </a>
+
+      <a class="post" href="#" data-reveal style="--d:160ms">
+        <div class="post__meta"><span class="label">21 Apr 2026</span><span class="label">5 min read</span></div>
+        <h3 class="post__title">An AI that can't explain itself is just a rumour</h3>
+        <div class="post__thumb">
+          <svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <path d="M50 100 L120 45 M50 100 L120 100 M50 100 L120 155"/>
+            <path d="M120 45 L200 100 M120 100 L200 100 M120 155 L200 100"/>
+            <path d="M200 100 L270 100"/>
+            <circle cx="50" cy="100" r="8"/><circle cx="120" cy="45" r="8"/>
+            <circle cx="120" cy="100" r="8"/><circle cx="120" cy="155" r="8"/>
+            <circle cx="200" cy="100" r="8"/><circle cx="270" cy="100" r="12" stroke-dasharray="3 4"/>
+          </svg>
+        </div>
+      </a>
+
+      <a class="post" href="#" data-reveal>
+        <div class="post__meta"><span class="label">02 Apr 2026</span><span class="label">7 min read</span></div>
+        <h3 class="post__title">We deleted 60% of our dashboard. Usage doubled.</h3>
+        <div class="post__thumb">
+          <svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <rect x="30" y="30" width="120" height="140" stroke-dasharray="4 4" opacity="0.5"/>
+            <path d="M45 60 h90 M45 80 h70 M45 100 h90 M45 120 h60 M45 140 h80" opacity="0.5"/>
+            <rect x="180" y="30" width="110" height="140"/>
+            <path d="M200 90 h70" stroke-width="2"/>
+            <path d="M200 115 h40" opacity="0.6"/>
+            <circle cx="235" cy="60" r="12"/>
+          </svg>
+        </div>
+      </a>
+
+      <a class="post" href="#" data-reveal style="--d:80ms">
+        <div class="post__meta"><span class="label">18 Mar 2026</span><span class="label">6 min read</span></div>
+        <h3 class="post__title">Human error is a design failure, not a people problem</h3>
+        <div class="post__thumb">
+          <svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <path d="M30 100 H110"/>
+            <path d="M160 55 L205 100 L160 145 L115 100 Z"/>
+            <path d="M145 98 L157 110 L178 84"/>
+            <path d="M210 100 H290"/>
+            <path d="M280 92 L290 100 L280 108"/>
+            <path d="M60 70 h30 M60 130 h30" opacity="0.4"/>
+          </svg>
+        </div>
+      </a>
+
+      <a class="post" href="#" data-reveal style="--d:160ms">
+        <div class="post__meta"><span class="label">04 Mar 2026</span><span class="label">9 min read</span></div>
+        <h3 class="post__title">What 140 deployments taught us about legacy systems</h3>
+        <div class="post__thumb">
+          <svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <path d="M40 40 C 120 40, 140 100, 220 100" opacity="0.7"/>
+            <path d="M40 70 C 120 70, 150 100, 220 100" opacity="0.7"/>
+            <path d="M40 130 C 120 130, 150 100, 220 100" opacity="0.7"/>
+            <path d="M40 160 C 120 160, 140 100, 220 100" opacity="0.7"/>
+            <circle cx="228" cy="100" r="12"/>
+            <path d="M245 100 H290"/>
+            <path d="M282 93 L290 100 L282 107"/>
+          </svg>
+        </div>
+      </a>
+
+    </div>
+
+    <div style="display:flex;justify-content:center;margin-top:clamp(3rem,5vw,4rem)" data-reveal>
+      <button class="btn">Load more</button>
+    </div>
+  </div>
+</section>
+
+<!-- CTA + FOOTER -->
+<section class="inv">
+  <div class="marquee" data-marquee aria-hidden="true">
+    <div class="marquee__track">
+      <span class="marquee__item">Let's build together
+        <svg class="mark" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10.5"/><circle cx="12" cy="12" r="5.5"/><path d="M12 1.5V22.5M1.5 12H22.5"/></svg>
+      </span>
+      <span class="marquee__item">Let's build together
+        <svg class="mark" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10.5"/><circle cx="12" cy="12" r="5.5"/><path d="M12 1.5V22.5M1.5 12H22.5"/></svg>
+      </span>
+      <span class="marquee__item">Let's build together
+        <svg class="mark" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10.5"/><circle cx="12" cy="12" r="5.5"/><path d="M12 1.5V22.5M1.5 12H22.5"/></svg>
+      </span>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="cta">
+      <span class="label" data-reveal>Start here</span>
+      <h2 class="cta__title" data-reveal style="--d:80ms">Bring us your<br>hardest system.</h2>
+      <div class="cta__actions" data-reveal style="--d:160ms">
+        <a class="btn btn--solid" href="contact.html">
+          Start a project
+          <svg class="btn__arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 10L10 2M10 2H4M10 2v6"/></svg>
+        </a>
+        <a class="btn" href="mailto:hello@nptech.io">hello@nptech.io</a>
+      </div>
+    </div>
+
+    <footer class="foot">
+      <div class="foot__grid">
+        <div class="foot__col">
+          <a class="logo" href="index.html">
+            <svg class="mark" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="10.5"/><circle cx="12" cy="12" r="5.5"/><path d="M12 1.5V22.5M1.5 12H22.5"/>
+            </svg>
+            <span>NPTech</span>
+          </a>
+          <p class="muted" style="max-width:34ch">North Pole Tech. AI-native software, built from Kathmandu for the world.</p>
+        </div>
+        <div class="foot__col">
+          <span class="label">Sitemap</span>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="products.html">Products</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="insights.html">Insights</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="foot__col">
+          <span class="label">Products</span>
+          <a href="products.html">Atlas</a>
+          <a href="products.html">Oracle</a>
+          <a href="products.html">Sentinel</a>
+          <a href="products.html">Pulse</a>
+        </div>
+        <div class="foot__col">
+          <span class="label">Find us</span>
+          <a href="https://maps.google.com/?q=P9M6%2BR65,+Budhanilkantha+44600,+Nepal" target="_blank" rel="noopener">P9M6+R65, Budhanilkantha<br>Kathmandu 44600, Nepal</a>
+          <a href="mailto:hello@nptech.io">hello@nptech.io</a>
+          <a href="tel:+97714567890">+977 1 456 7890</a>
+        </div>
+      </div>
+
+      <div class="foot__wordmark" aria-hidden="true">NPTECH</div>
+
+      <div class="foot__bottom">
+        <span class="label">© <span data-year>2026</span> North Pole Tech Pvt. Ltd.</span>
+        <div style="display:flex;gap:1.5rem;flex-wrap:wrap">
+          <a class="label" href="#">LinkedIn</a>
+          <a class="label" href="#">X</a>
+          <a class="label" href="#">GitHub</a>
+        </div>
+        <span class="label">True north for every decision</span>
+      </div>
+    </footer>
+  </div>
+</section>
+
+</main>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
