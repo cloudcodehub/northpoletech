@@ -21,8 +21,8 @@ export default function Drawer({ open, onClose }) {
       </nav>
       <div className="drawer__foot">
         <span className="label">Kathmandu, Nepal</span>
-        <a className="label" href="mailto:info@northpoletech.com">
-          info@northpoletech.com
+        <a className="label" href="mailto:info.northpoletech@gmail.com">
+          info.northpoletech@gmail.com
         </a>
       </div>
     </div>

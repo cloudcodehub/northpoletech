@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const MAP_URL =
-  "https://www.google.com/maps/search/?api=1&query=P9M6%2BR65%2C+Budhanilkantha%2C+Bagmati+Province+44600%2C+Nepal";
+  "https://www.google.com/maps/search/?api=1&query=Durga+Mandir%2C+Kapan-12%2C+Kathmandu%2C+Nepal";
 
 /** Site footer. `flush` drops the top rule/padding (used on the contact page). */
 export default function Footer({ flush = false }) {
@@ -42,11 +42,11 @@ export default function Footer({ flush = false }) {
         <div className="foot__col">
           <span className="label">Find us</span>
           <a href={MAP_URL} target="_blank" rel="noopener">
-            P9M6+R65, Budhanilkantha
+            Kapan-12, Durga Mandir Kathmandu,
             <br />
-            Bagmati Province 44600, Nepal
+            Nepal Kathmandu Bagmati
           </a>
-          <a href="mailto:info@northpoletech.com">info@northpoletech.com</a>
+          <a href="mailto:info.northpoletech@gmail.com">info.northpoletech@gmail.com</a>
           <a href="tel:+9779861497007">+977 9861497007</a>
         </div>
       </div>
@@ -57,7 +57,7 @@ export default function Footer({ flush = false }) {
 
       <div className="foot__bottom">
         <span className="label">
-          © {new Date().getFullYear()} North Pole Tech Pvt. Ltd.
+          © {new Date().getFullYear()} North Pole Tech Service Private Limited Company
         </span>
         <div style={{ display: "flex", gap: "1.5rem", flexWrap: "wrap" }}>
           <a className="label" href="#">

@@ -5,15 +5,15 @@ import Footer from "../components/Footer.jsx";
 import ContactForm from "../components/ContactForm.jsx";
 
 const MAP_URL =
-  "https://www.google.com/maps/search/?api=1&query=P9M6%2BR65%2C+Budhanilkantha%2C+Bagmati+Province+44600%2C+Nepal";
+  "https://www.google.com/maps/search/?api=1&query=Durga+Mandir%2C+Kapan-12%2C+Kathmandu%2C+Nepal";
 const MAP_EMBED =
-  "https://maps.google.com/maps?q=27.7345125,85.3606094&z=16&output=embed";
+  "https://maps.google.com/maps?q=Durga+Mandir%2C+Kapan%2C+Kathmandu%2C+Nepal&z=16&output=embed";
 const underline = { borderBottom: "1px solid var(--rule)" };
 
 export default function Contact() {
   usePageMeta(
     "Contact — NPTECH",
-    "Talk to North Pole Tech. Budhanilkantha, Bagmati Province 44600, Nepal. We answer every message within one business day."
+    "Talk to North Pole Tech. Kapan-12, Durga Mandir Kathmandu, Nepal Kathmandu Bagmati. We answer every message within one business day."
   );
 
   return (
@@ -58,14 +58,14 @@ export default function Contact() {
               <div className="map map--embed" style={{ marginBottom: "2.5rem" }}>
                 <iframe
                   className="map__frame"
-                  title="North Pole Tech on Google Maps: P9M6+R65, Budhanilkantha"
+                  title="North Pole Tech on Google Maps: Kapan-12, Durga Mandir Kathmandu"
                   src={MAP_EMBED}
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   allowFullScreen
                 ></iframe>
                 <div className="map__bar">
-                  <span className="label">27.7345° N · 85.3606° E</span>
+                  <span className="label">Kapan-12, Kathmandu</span>
                   <a className="tlink" href={MAP_URL} target="_blank" rel="noopener">
                     Open in Maps
                     <Arrow size={11} className="" />
@@ -76,15 +76,15 @@ export default function Contact() {
               <div>
                 <div className="info-row">
                   <span className="label">Studio</span>
-                  <p>P9M6+R65, Budhanilkantha<br />Bagmati Province 44600, Nepal</p>
+                  <p>Kapan-12, Durga Mandir Kathmandu,<br />Nepal Kathmandu Bagmati</p>
                 </div>
                 <div className="info-row">
                   <span className="label">General</span>
-                  <p><a href="mailto:info@northpoletech.com" style={underline}>info@northpoletech.com</a></p>
+                  <p><a href="mailto:info.northpoletech@gmail.com" style={underline}>info.northpoletech@gmail.com</a></p>
                 </div>
                 <div className="info-row">
                   <span className="label">Sales</span>
-                  <p><a href="mailto:info@northpoletech.com" style={underline}>info@northpoletech.com</a></p>
+                  <p><a href="mailto:info.northpoletech@gmail.com" style={underline}>info.northpoletech@gmail.com</a></p>
                 </div>
                 <div className="info-row">
                   <span className="label">Phone</span>
