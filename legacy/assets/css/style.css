@@ -1235,6 +1235,34 @@ h1, h2, h3, h4 {
   animation: ping 2.4s var(--ease) infinite;
 }
 
+/* Live map embed: frame fills the box, coordinates + link sit in a bar beneath */
+.map--embed {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 0;
+  aspect-ratio: auto;
+  text-align: left;
+}
+
+.map__frame {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 11;
+  border: 0;
+  filter: grayscale(1) contrast(1.05);
+}
+
+.map__bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem 1rem;
+  padding: 0.85rem 1rem;
+  border-top: 1px solid var(--rule);
+}
+
 @keyframes ping {
   0%   { transform: scale(0.6); opacity: 1; }
   100% { transform: scale(2.2); opacity: 0; }

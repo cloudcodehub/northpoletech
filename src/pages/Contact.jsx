@@ -5,13 +5,15 @@ import Footer from "../components/Footer.jsx";
 import ContactForm from "../components/ContactForm.jsx";
 
 const MAP_URL =
-  "https://maps.google.com/?q=P9M6%2BR65,+Budhanilkantha+44600,+Nepal";
+  "https://www.google.com/maps/search/?api=1&query=P9M6%2BR65%2C+Budhanilkantha%2C+Bagmati+Province+44600%2C+Nepal";
+const MAP_EMBED =
+  "https://maps.google.com/maps?q=27.7345125,85.3606094&z=16&output=embed";
 const underline = { borderBottom: "1px solid var(--rule)" };
 
 export default function Contact() {
   usePageMeta(
     "Contact — NPTECH",
-    "Talk to North Pole Tech. Budhanilkantha, Kathmandu 44600, Nepal. We answer every message within one business day."
+    "Talk to North Pole Tech. Budhanilkantha, Bagmati Province 44600, Nepal. We answer every message within one business day."
   );
 
   return (
@@ -53,23 +55,18 @@ export default function Contact() {
                 <span className="sechead__tag">Find us</span>
               </div>
 
-              <div className="map" style={{ marginBottom: "2.5rem" }}>
-                {/* Contour motif: the Kathmandu valley, abstracted. No map tile, no colour. */}
-                <svg className="map__lines" viewBox="0 0 400 280" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-                  <path d="M-20 60 C 60 40, 120 90, 200 70 C 280 50, 340 100, 420 80" />
-                  <path d="M-20 100 C 60 80, 130 130, 200 110 C 270 90, 350 140, 420 120" />
-                  <path d="M-20 140 C 70 120, 130 170, 200 150 C 270 130, 350 180, 420 160" />
-                  <path d="M-20 180 C 60 160, 140 210, 200 190 C 260 170, 350 220, 420 200" />
-                  <path d="M-20 220 C 70 200, 130 250, 200 230 C 270 210, 340 260, 420 240" />
-                  <path d="M-20 20 C 70 0, 130 50, 200 30 C 270 10, 340 60, 420 40" />
-                  <path d="M60 -20 V300 M140 -20 V300 M220 -20 V300 M300 -20 V300" opacity="0.35" />
-                </svg>
-
-                <div className="map__pin">
-                  <span className="map__dot" aria-hidden="true"></span>
-                  <span className="label" style={{ color: "var(--fg)" }}>NPTech HQ</span>
-                  <span className="label">27.7772° N · 85.3620° E</span>
-                  <a className="tlink" href={MAP_URL} target="_blank" rel="noopener" style={{ marginTop: "0.5rem" }}>
+              <div className="map map--embed" style={{ marginBottom: "2.5rem" }}>
+                <iframe
+                  className="map__frame"
+                  title="North Pole Tech on Google Maps: P9M6+R65, Budhanilkantha"
+                  src={MAP_EMBED}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  allowFullScreen
+                ></iframe>
+                <div className="map__bar">
+                  <span className="label">27.7345° N · 85.3606° E</span>
+                  <a className="tlink" href={MAP_URL} target="_blank" rel="noopener">
                     Open in Maps
                     <Arrow size={11} className="" />
                   </a>
@@ -79,19 +76,19 @@ export default function Contact() {
               <div>
                 <div className="info-row">
                   <span className="label">Studio</span>
-                  <p>P9M6+R65, Budhanilkantha<br />Kathmandu 44600, Nepal</p>
+                  <p>P9M6+R65, Budhanilkantha<br />Bagmati Province 44600, Nepal</p>
                 </div>
                 <div className="info-row">
                   <span className="label">General</span>
-                  <p><a href="mailto:hello@nptech.io" style={underline}>hello@nptech.io</a></p>
+                  <p><a href="mailto:info@northpoletech.com" style={underline}>info@northpoletech.com</a></p>
                 </div>
                 <div className="info-row">
                   <span className="label">Sales</span>
-                  <p><a href="mailto:sales@nptech.io" style={underline}>sales@nptech.io</a></p>
+                  <p><a href="mailto:info@northpoletech.com" style={underline}>info@northpoletech.com</a></p>
                 </div>
                 <div className="info-row">
                   <span className="label">Phone</span>
-                  <p><a href="tel:+97714567890" style={underline}>+977 1 456 7890</a></p>
+                  <p><a href="tel:+9779861497007" style={underline}>+977 9861497007</a></p>
                 </div>
                 <div className="info-row">
                   <span className="label">Hours</span>

@@ -21,9 +21,9 @@ const NUMBERS = [
 ];
 
 const LEADERSHIP = [
-  { n: "01", name: "R. Shrestha", desc: "Founder & CEO — spent a decade untangling enterprise systems before deciding to replace them.", d: 0 },
-  { n: "02", name: "P. Gurung", desc: "Chief Technology Officer — builds the reasoning layer every product stands on.", d: 60 },
-  { n: "03", name: "M. Adhikari", desc: "Head of Product — decides what we don't build, which is most of it.", d: 120 },
+  { n: "01", name: "Rahul Magar", desc: "Founder & CEO — spent a decade untangling enterprise systems before deciding to replace them.", d: 0 },
+  { n: "02", name: "Kamal Magar", desc: "Chief Technology Officer — builds the reasoning layer every product stands on.", d: 60 },
+  { n: "03", name: "Gauraj Magar", desc: "Head of Product — decides what we don't build, which is most of it.", d: 120 },
   { n: "04", name: "S. Bhattarai", desc: "Head of Research — makes sure the forecast can survive its own backtest.", d: 180 },
 ];
 
@@ -146,7 +146,7 @@ export default function About() {
               Start a project
               <Arrow />
             </Link>
-            <a className="btn" href="mailto:hello@nptech.io">hello@nptech.io</a>
+            <a className="btn" href="mailto:info@northpoletech.com">info@northpoletech.com</a>
           </Cta>
           <Footer />
         </div>

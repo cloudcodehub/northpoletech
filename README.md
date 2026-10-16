@@ -89,7 +89,7 @@ single-word category labels. Sections are numbered as navigational scaffolding.
 - All testimonials, client names and leadership names
 - Pricing figures
 - Article titles and dates (Insights links are placeholders — no article pages)
-- `hello@nptech.io`, `+977 1 456 7890`, and the social links (currently `#`)
+- `info@northpoletech.com`, `+977 9861497007`, and the social links (currently `#`)
 
 The address and Google Maps link are real: P9M6+R65, Budhanilkantha 44600, Nepal.
 

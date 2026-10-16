@@ -180,7 +180,7 @@ export default function Pricing() {
               Start free trial
               <Arrow />
             </Link>
-            <a className="btn" href="mailto:hello@nptech.io">hello@nptech.io</a>
+            <a className="btn" href="mailto:info@northpoletech.com">info@northpoletech.com</a>
           </Cta>
           <Footer />
         </div>

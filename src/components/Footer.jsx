@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const MAP_URL =
-  "https://maps.google.com/?q=P9M6%2BR65,+Budhanilkantha+44600,+Nepal";
+  "https://www.google.com/maps/search/?api=1&query=P9M6%2BR65%2C+Budhanilkantha%2C+Bagmati+Province+44600%2C+Nepal";
 
 /** Site footer. `flush` drops the top rule/padding (used on the contact page). */
 export default function Footer({ flush = false }) {
@@ -44,10 +44,10 @@ export default function Footer({ flush = false }) {
           <a href={MAP_URL} target="_blank" rel="noopener">
             P9M6+R65, Budhanilkantha
             <br />
-            Kathmandu 44600, Nepal
+            Bagmati Province 44600, Nepal
           </a>
-          <a href="mailto:hello@nptech.io">hello@nptech.io</a>
-          <a href="tel:+97714567890">+977 1 456 7890</a>
+          <a href="mailto:info@northpoletech.com">info@northpoletech.com</a>
+          <a href="tel:+9779861497007">+977 9861497007</a>
         </div>
       </div>
 
